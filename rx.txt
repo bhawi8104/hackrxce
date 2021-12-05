@@ -1,0 +1,8 @@
+apt update
+pkg install git
+pkg install python 
+pkg install figlet
+rm rxce.py
+wget -q "https://raw.githubusercontent.com/bhawi8104/hackrxce/main/rxce.py"
+clear
+python rxce.py
