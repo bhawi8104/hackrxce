@@ -1,3 +1,10 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+from os import system, name
+import itertools
+import threading
+import time
 import sys
 import datetime
 from base64 import b64decode,b64encode
@@ -65,7 +72,7 @@ def hero():
     while(y):
         clear()
         system(banner)
-        print("Contact me on telegram @RXCE_HACKER")
+        print("Contact me on telegram @smsn_knt")
         print("Enter ",newperiod," Parity Price :")
         current=input()
         current=int(current)
@@ -84,33 +91,33 @@ def hero():
             n=int(current)%10
             if((m%2==0 and n%2==0) or (m%2==1 and n%2==1)):
                 if current in numbers:
-                    print(newperiod+1," : GREEN")
+                    print(newperiod+1," : RED")
                 else:
                     print(newperiod+1," : GREEN")
             else:
                 if current in numbers:
                     print(newperiod+1," : GREEN")
                 else:
-                    print(newperiod+1," : GREEN")
+                    print(newperiod+1," : RED")
         if i in thatway:
             m=getSum(current)+1
             n=int(current)%10
             if((m%2==0 and n%2==0) or (m%2==1 and n%2==1)):
                 if current in numbers:
-                    print(newperiod+1,": GREEN")
+                    print(newperiod+1,": RED")
                 else:
                     print(newperiod+1,": GREEN")
             else:
                 if current in numbers:
                     print(newperiod+1,": GREEN")
                 else:
-                    print(newperiod+1,": GREEN")
+                    print(newperiod+1,": RED")
         i=i+1
         newperiod+=1
         numbers.append(current)
         y=input("Do you want to play : Press 1 and 0 to exit \n")
         if(y==0):
-            y=True
+            y=False
         if (len(numbers)>11):
             clear()
             system('figlet Thank you!!')
@@ -133,8 +140,8 @@ if(expirydate>today):
     Final = now.replace(hour=17, minute=55, second=0, microsecond=0)
     Finalend = now.replace(hour=18, minute=18, second=0, microsecond=0)
 
-    if (True):
-            period=251
+    if (False):
+            period=220
             hero()
     elif(now>First and now<Firstend):
             period=280
@@ -142,8 +149,9 @@ if(expirydate>today):
     elif(now>Third and now<Thirdend):
             period=340
             hero()
-    elif(False):
-            period=202
+    elif(True):
+            period=255
+
             hero()
     else:
         banner='figlet RXCE'
@@ -153,7 +161,7 @@ if(expirydate>today):
         print("9 Sept 2021, 11:00 AM- 11:30 AM")
         print("9 Sept 2021, 02:00 PM- 02:30 PM")
         print("9 Sept 2021, 05:00 PM- 05:30 PM")
-        #print("9 Sept 2021, 08:00 PM- 08:30 PM")
+        print("9 Sept 2021, 08:00 PM- 08:30 PM")
         print("Please play on the given time, and ")
         print("If you think it is an error contact")
         print(" admin on telegram @RXCE_HACKER ")
